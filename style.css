@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button{
+    height: 40px;
+    width: 80px;
+}
+.info{
+    position: relative;
+    display: inline-block;
+}
+
+
+.hiden{
+    display: none;
+    position: absolute;
+    top:0px;
+    left: 115%;
+    height: 80px;
+    width: 60px;
+    border-radius: 10px;
+    border: 1px solid red ;
+    padding: 10px;
+    background:black;
+    color: aliceblue;
+}
+.hiden::before{
+    position: absolute;
+    right: 100%;
+    top: 15px;
+    content: "";
+    border: 10px solid transparent;
+    border-right: 10px solid red;
+}
+.hiden::after{
+    position: absolute;
+    right: 99%;
+    top: 15px;
+    content: "";
+    border: 10px solid transparent;
+    border-right: 10px solid black;
+}
+
+section {
+    margin-top: 20px;
+    width: 500px;
+}
+section div{
+    padding: 41px;
+    border: 1px solid black;
+    transition: all 1s;
+}
+.a1.active{
+    background: red;
+}
+.a2.active{
+    background: blue;
+}
+.a3.active{
+    background: white;
+}
+.a4.active{
+    background: black;
+}
+.a5.active{
+    background: yellow;
+}
+.a6.active{
+    background: green;
+}
